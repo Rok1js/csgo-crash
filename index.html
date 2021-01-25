@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- HEAD -->
+  <title>CSGORULLER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="linki"><a href="#">crash</a></li>
+        <li id="linki"><a href="#">Withdraw</a></li>
+        <li id="linki"><a href="#">Deposit</a></li>
+        <li id="linki"><a href="#">Add balance</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- UNDERNAV MESSAGE -->
+<div class="container-fluid2 bg-2 text-center message">
+  <h5 id="des">SITE IS AT DEVELOPING STAGE, MINOR ERRORS CAN HAPPEN, IF YOU COME IN CONTACT WITH ONE PLEASE CONTACT US: SUPPORT@CSGORULLER.COM </h5>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div id="div-tag" class="container-fluid bg-1 text-center">
+    <!-- FIRST CONTAINER -->
+  <div class="col-sm-8 crash gradient-border ">
+      <!-- CRASH NUMBERS-->
+    <div id="dot">
+      <h1 id="crash-number">1.00</h1>
+    </div>
+    <!-- PROGRESS BARS-->
+    <div class="" id="myProgress">
+  <div id="myBar"></div>
+</div>
+    <!-- CRASH HISTORY CONTAINER -->
+  <div class="col-sm-1 recent" id="wrapper-0"></div>
+  <div class="col-sm-1 recent" id="wrapper-1"></div>
+  <div class="col-sm-1 recent" id="wrapper-2"></div>
+  <div class="col-sm-1 recent" id="wrapper-3"></div>
+  <div class="col-sm-1 recent" id="wrapper-4"></div>
+  <div class="col-sm-1 recent" id="wrapper-5"></div>
+  <div class="col-sm-1 recent" id="wrapper-6"></div>
+  <div class="col-sm-1 recent" id="wrapper-7"></div>
+  <div class="col-sm-1 recent" id="wrapper-8"></div>
+  <div class="col-sm-1 recent" id="wrapper-9"></div>
+</div>
+    <!-- SECOND CONTAINER -->
+  <div class="col-sm-3 ">
+      <!-- BALANCE-->
+    <h3 id="bila">Balance : <span id="nauda"></span>$</h3>
+    <h5 id="error">1</h5>
+      <!-- AUTOCASHOUT FIELD-->
+    <h5 id="des">Autocashout:</h5>
+    <input type="text" id="autocashout" value="0" class="gradient-border" onkeypress='validate(event)'>
+      <!-- BET FIELD-->
+    <h5 id="des">Bet:</h5>
+    <input type="text" id="uzbetots" name="uzbetots" value="0" onkeypress='validate(event)'><br>
+      <!-- BUTTONS FOR BETTING AND CASHOUTING-->
+    <button type="button" id="bett" name="button" onclick="bets()">BET</button>
+    <button type="button" id="cashout" name="button" onclick="cashout()" >Cashout</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="bg-2">
+  <h5 id="des"> Copyright: csgoruller.com / 2020-2021</h5>
+</footer>
+</body>
+</html>
